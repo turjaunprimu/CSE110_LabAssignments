@@ -1,0 +1,503 @@
+LabAssignment02_Variables_and_Datatypes
+Name : Turjaun Jannat Primu
+Student ID : 24301064
+Course : CSE110
+
+
+//Task_01
+
+a.
+> int hungry
+Valid Identifier
+
+b.
+> int 2AB
+Incomplete expression
+//Invalid Identifier as digit is used at the beginning
+
+c.
+> int 312.2
+Incomplete expression
+//Invalid identifier as digit is used and it begins with a fractional number
+
+d.
+> int MOBILE
+Valid Identifier
+
+e.
+> int "Ans"
+Incomplete expression
+//Invalid identifier as double quotation mark is used at the beginning
+
+f.
+> int $30
+Valid Identifier
+
+g.
+> int Yes/No
+Incomplete expression
+//Invalid identifier as it has slash in between
+
+h.
+> int student-id
+Incomplete expression
+//Invalid identifier as it has hyphen
+
+i.
+> int A+3
+Incomplete expression
+//Invalid identifier as it has plus(+) sign
+
+j.
+> int 'X'
+Incomplete expression
+//Invalid identifier as it starts with single quotation mark.
+
+k.
+> int return
+Incomplete expression
+//Invalid identifier as it is a reserved keyword and undefinable
+
+
+
+
+
+
+
+
+
+//Task-02
+
+
+
+//2.1
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int x=565;
+    
+    System.out.println(x);
+  }
+}
+
+
+
+//2.2
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int x=565;
+    int y=124;
+    int sum=x+y;
+    
+    System.out.println(sum);
+  }
+}
+
+
+
+//2.3
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int x=565;
+    int y=124;
+
+    int mul=x*y;
+    int div=x/y;
+      
+      
+    System.out.println(mul);
+    System.out.println(div);
+  }
+}
+
+
+
+//2.4
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    double x=565.789;
+    double y=124.423;
+    
+    double sum=x+y;
+    double mul=x*y;
+    double div=x/y;
+    
+    System.out.println(sum);
+    System.out.println(mul);
+    System.out.println(div);
+    
+  }
+}
+
+
+
+//2.5
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    double x=565.789;
+    int y=124;
+    
+    double sum=x+y;
+    double mul=x*y;
+    double div=x/y;
+    
+    System.out.println(sum);
+    System.out.println(mul);
+    System.out.println(div);
+}
+
+
+
+//2.6
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    String x="Hello";
+    String y="World!";
+    
+    String a="CSE";
+    int b=110;
+  
+    System.out.println(x+" "+y);
+    System.out.println(a+" "+b);
+    System.out.println(b+" "+a);
+    
+    
+  }
+}
+
+
+
+
+
+//Task_03
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int radius=6;
+    
+    double area=Math.PI*radius*radius;
+    double circumference=2*Math.PI*radius;
+    
+    System.out.println("Area of the Circle="+area);
+    System.out.println("Circumference of the Circle="+circumference);
+    
+  }
+}
+
+
+
+
+
+//Task_04
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int x=1234;
+    int last2digits=x%100;
+    
+    System.out.println("The last 2 digits of the number is "+last2digits);
+    
+  }
+}
+
+
+
+
+
+//Task_05
+
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int inch=100;
+    double meter=0.0254;
+    
+    System.out.println(inch+ " inch is " + inch*meter + " meters");
+    
+  }
+}
+
+
+
+
+//Task_06
+
+a.
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int x=123;
+    int y=456;
+    
+    int temp=y;
+    y=x;
+    x=temp;
+
+   System.out.println(x);
+   System.out.println(y);
+   
+  }
+}
+
+
+
+
+b.
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+  
+    int x=9;
+    int y=6;
+    
+
+    x=x+y;
+    y=x-y;
+    x=x-y;
+
+    System.out.println(x);
+    System.out.println(y);    
+ }
+    }
+
+
+
+
+
+//Task_07
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int minutes=1234567;
+    int hours=1234567/60;
+    int days=hours/24;
+    int year=days/365;
+    
+    
+    System.out.println(minutes+ " minutes is approximately " +year+ " years and " +days+ " days.");
+    
+    
+  }
+}
+
+
+
+
+//Task_08
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int a;
+    a=2;
+    int b;
+    b=5;
+    int c;
+    c=8;
+    
+    int d=(2*b)*((c-a)/3)+7;
+    
+    System.out.println("The value of d is " +d);
+  }
+}
+
+
+
+
+
+
+//Task_09
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+    int n=6;
+
+  int n1=n*1;
+  int n2=n*2;
+  int n3=n*3;
+  int n4=n*4;
+  int n5=n*5;
+  int n6=n*6;
+  int n7=n*7;
+  int n8=n*8;
+  int n9=n*9;
+  int n10=n*10;
+
+  System.out.println(6 + "x" + 1 + "=" + n1);
+  System.out.println(6 + "x" + 2 + "=" + n2);
+  System.out.println(6 + "x" + 3 + "=" + n3);
+  System.out.println(6 + "x" + 4 + "=" + n4);
+  System.out.println(6 + "x" + 5 + "=" + n5);
+  System.out.println(6 + "x" + 6 + "=" + n6);
+  System.out.println(6 + "x" + 7 + "=" + n7);
+  System.out.println(6 + "x" + 8 + "=" + n8);
+  System.out.println(6 + "x" + 9 + "=" + n9);
+  System.out.println(6 + "x" + 10 + "=" + n10);
+  }
+}
+
+
+
+
+
+
+//Task_10
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+   
+   int n=100;
+   int a=1;
+   int L=100;
+
+   int S=(n/2)*(a+L);
+
+   System.out.println(S);
+  }
+}
+
+
+
+
+
+
+//Task_11
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+   
+   double a=4.5;
+   double b=9.5;
+   double c=Math.sqrt((a*a)+(b*b));
+   
+   System.out.println("SinA=a/c=" + a/c);
+   System.out.println("CosA=b/c=" + b/c);
+   System.out.println("SinB=b/c=" + b/c);
+   System.out.println("CosB=a/c=" + a/c);
+  }
+}
+
+
+
+
+
+//Task_12
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+   
+  int StudentID=24301064;
+  int TwoRightmostDigits=StudentID%100;
+  
+  
+  System.out.println(TwoRightmostDigits%10);
+  System.out.println(TwoRightmostDigits/10);
+  
+  
+  
+  }
+}
+
+
+
+
+
+
+
+
+//Task_13
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+  
+  double hour=5;
+  double minute=56;
+  double second=23;
+  double student_id=1064;
+
+  double time=(hour+ (minute/60) + (second/3600));
+
+  double kmph=(student_id/1000)/time;
+
+  double mph=(student_id/1609)/time;
+
+  System.out.println("Your velocity in kilometers per hour is " + kmph);
+  System.out.println("Your velocity in miles per hour is " + mph);     
+ }
+    }
+
+
+
+
+
+
+//Task_14
+
+
+public class LabAssignment02
+{
+  public static void main(String[]args)
+  {
+  
+  double a=8;
+  double b=3;
+  
+  double c=Math.sqrt(((a/2)*(a/2)) + (b*b));
+
+  double area=((3*Math.sqrt(3))/2)*c*c;
+  double circumference=6*c;
+
+  System.out.println("The area of the Hexagon=" +area);
+  System.out.println("the circumference of the Hexagon=" +circumference);    
+ }
+    }
