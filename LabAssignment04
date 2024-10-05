@@ -1,0 +1,324 @@
+LabAssignment04_LinearLoops
+Name : Turjaun Jannat Primu
+Student ID : 24301064
+Course : CSE110
+
+
+
+
+//Task_01
+
+
+a.
+
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+   int i=24;
+   
+   while (i>=-6)
+   {
+     if (i==-6)
+     {
+       System.out.println(i);
+     }
+
+     else
+     {
+       System.out.print(i+ ",");
+     }
+    
+     i=i-6;
+   }
+  }
+}
+
+
+
+b.
+
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+   int i=-10;
+   
+   while (i<=20)
+   {
+     if (i==20)
+     {
+       System.out.println(i);
+     }
+
+     else
+     {
+       System.out.print(i+ ",");
+     }
+    
+     i=i+5;
+   }
+  }
+}
+
+
+
+
+//Task_02
+
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    
+   Scanner sc=new Scanner(System.in);
+   System.out.println("N= ");
+   int n=sc.nextInt();   
+   
+   int sum=0;
+   
+    for(int i=1 ; i<=n ; i++)
+    {
+      System.out.println("Input the " +n+ " numbers:");
+      int number=sc.nextInt();
+      sum += number;
+      
+     
+    }
+    
+    System.out.println("The sum of " +n+ " no is: " + sum);
+    double average=sum/n;
+    System.out.println("The average is: " +average);
+  }
+}
+
+
+
+//Task_03
+
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    
+    Scanner sc=new Scanner(System.in);
+    
+    for(int i=1 ; i>=1 ; i++)
+    {
+      System.out.println("Enter number: ");
+      int number=sc.nextInt();
+      
+      if (number<0)
+      {
+        break;
+      }
+      
+      System.out.println(number +"^2=" + (number*number));
+      
+    }
+    
+  }
+
+
+
+//Task_04
+
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter a number: ");
+    int num=sc.nextInt();
+    
+    System.out.println("Divisors of " +num+ ":");
+    
+    for(int i=1 ; i>=1 ; i++)
+    {
+      
+      if (num%i==0 && i>=1)
+      {
+        System.out.println(i);
+      }
+      
+    }
+    
+  }
+}
+
+
+
+// Task_05
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    
+    Scanner sc=new Scanner(System.in);
+   
+     System.out.println("Enter an integer: ");
+     int n=sc.nextInt();   
+   
+    int positive=0;
+    int negative=0;
+   
+    for(int i=1 ; i<=n ; i++)
+    {
+      System.out.println("Enter number " +i);
+      int number=sc.nextInt();
+      
+    
+    if (number<0)
+    {
+      negative++;
+    }
+    
+    else if (number>0)
+    {
+      positive++;
+    }
+    
+    else
+    {
+      System.out.println ("Invalid");
+    }
+    
+    }
+    
+    System.out.println(positive+ " Non-negative Numbers");
+    System.out.println(negative+ " Negative Numbers");
+  }
+}
+
+
+
+//Task_06
+
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Input number of terms: ");
+    int n=sc.nextInt();
+    
+    int sum=0;
+    System.out.println("The odd numbers are:");
+
+        for (int i=1; i<=n; i++)
+        {
+            int odd=(2*i)-1;
+            System.out.println(odd);
+            sum+=odd;
+        }
+        
+         System.out.println("The Sum of odd Natural Numbers up to " +n+ " terms is: " +sum);
+         
+  }
+}
+    
+
+
+
+//Task_07
+
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    
+    Scanner sc=new Scanner(System.in);
+    int sum=0;
+    
+    for(int i=1 ; i<=10; i++)
+    {
+      System.out.println("Enter number: ");
+      
+      int num=sc.nextInt();
+      sum=sum+num;
+      
+      System.out.println("Sum: "+ sum);
+    }
+  }
+}
+
+
+
+
+
+//Task_08
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter a positive integer: ");
+    int n=sc.nextInt();
+    
+    
+        for (int i=1; i<=n; i++)
+        {
+          if (i%5==0 && i%3!=0)
+          {
+            
+           System.out.println(i);
+
+          }
+        }
+         
+  }
+}
+
+
+
+
+//Task_09
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment04
+{
+  public static void main(String[]args)
+  {
+    
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter number: ");
+    int num=sc.nextInt();
+    
+    int count=0;
+    
+    while(num>0)
+    {
+      num=num/10;
+      count=count+1; 
+    }
+    
+    System.out.println("Total digits=" +count);
+  }
+}
+
+
