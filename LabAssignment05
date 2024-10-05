@@ -1,0 +1,419 @@
+LabAssignment05_NestedLoops
+Name : Turjaun Jannat Primu
+Student ID : 24301064
+Course : CSE110
+
+
+
+
+
+
+
+
+//Task_01
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+  
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter n: ");
+    int n=sc.nextInt();
+    int primeCount=0;
+   
+    
+    for (int num=2; primeCount<n; num++)
+    {
+      int divCount=0;
+      
+      for (int divider=2; divider<=(num/2); divider++)
+      {
+        
+        int remainder=num%divider;
+        
+        if (remainder==0)
+        {
+          
+          divCount+=1;
+          break;
+        }
+      }
+      
+        if (divCount==0)
+      
+        {
+          System.out.println(num);
+          
+          primeCount++;
+        }
+      }
+        
+    }
+}
+
+
+
+
+
+
+
+//Task_02
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+{
+  public static void main(String[]args)
+  {
+   
+    Scanner sc=new Scanner(System.in);
+     
+      System.out.print("The value of N: ");
+      int n=sc.nextInt();
+      
+      int y=0;
+      
+    
+    
+    for (int outer=1; outer<=n; outer++)
+    {
+      
+      int sum=0;
+      
+      for (int inner=1; inner<=outer; inner++)
+      {
+        
+        sum+=inner;
+        
+      }
+      
+      y-=sum;
+    
+    }
+  
+       
+      System.out.println("The value of y: "+ y);
+      
+      
+    }
+    
+  }
+
+
+
+
+//Task_03
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+{
+  public static void main(String[]args)
+  {
+   
+    Scanner sc=new Scanner(System.in);
+    
+    
+    
+    for (int i=1; i>0; i++)
+    {
+      
+      System.out.println("Enter number: ");
+      int n=sc.nextInt();
+      int count=0;
+      
+      if (n%2!=0)
+      {
+        break;
+      }
+      
+      
+      
+      for (int div=1; div<=n; div++)
+      {
+        
+        if (n%div==0)
+        {
+          
+          count+=1;
+          
+        }
+        
+      }
+      
+      System.out.println(n + " has " +count+ " divisors");
+      
+      
+      
+    }
+    
+  }
+}
+
+
+
+
+
+//Task_04
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    
+    int N=sc.nextInt();
+
+        
+        for (int outer=0; outer<N; outer++)
+        {
+            
+            int X=sc.nextInt();
+            int Y=sc.nextInt();
+            
+            int sum=0;
+            int num=X;
+            
+
+            for (int inner=0; inner<Y; inner++)
+            {
+               
+                if (num%2==0)
+                {
+                    num++;
+                }
+                
+                
+                
+                sum+=num;
+                num+=2;
+            }
+
+            
+            System.out.println(sum);
+        }
+
+       
+    }
+}
+
+
+
+
+
+
+
+//Task_05
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+  
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the length of a rectangle: ");
+    int length=sc.nextInt();
+    System.out.println("Enter the width of a rectangle: ");
+    int width=sc.nextInt();
+    
+    
+    
+    for (int lineCount=1; lineCount<=width; lineCount++)
+    {
+      
+      
+      for (int columnCount=1; columnCount<=length; columnCount++)
+      {
+        System.out.print(columnCount);
+      }
+      
+      
+      System.out.println();
+      
+      }
+  }
+}
+
+
+
+
+
+
+
+//Task_06
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+  
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the height of a right-justified right triangle: ");
+    int height=sc.nextInt();
+    
+    int space=height-1;
+    int n=1;
+    
+    
+    for (int lineCount=1; lineCount<=height; lineCount++)
+    {
+      
+      
+      for (int spaceCount=1; spaceCount<=space; spaceCount++)
+      {
+        System.out.print(" ");
+      }
+      
+      
+      
+      for (int columnCount=1; columnCount<=n; columnCount++)
+      {
+        System.out.print(columnCount);
+      }
+      
+      
+      System.out.println();
+      
+      space-=1;
+      n+=1;
+    }
+  }
+}
+
+
+
+
+//Task_07
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+  
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the height of an isosceles triangle: ");
+    int height=sc.nextInt();
+    
+    int space=height+1;
+    
+    
+    
+    for (int lineCount=1; lineCount<=height; lineCount++)
+    {
+      
+      
+      for (int spaceCount=1; spaceCount<=space; spaceCount++)
+      {
+        System.out.print(" ");
+      }
+      
+      int column=((2*lineCount)-1);
+      
+
+      for (int columnCount=1; columnCount<=column; columnCount++)
+      {
+        System.out.print(columnCount + " ");
+        
+      }
+      
+      
+      System.out.println();
+      
+      space-=2;
+      
+    }
+  }
+}
+
+
+
+//Task_08
+
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment05
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        
+        System.out.println("Start: ");
+        int start=sc.nextInt();
+        System.out.println("End: ");
+        int end=sc.nextInt();
+        
+        
+        System.out.println("Armstrong numbers: ");
+        
+        
+        for (int num=start; num<=end; num++)
+        {
+            int mainNum=num;
+            int digit=0;
+            int sum=0;
+            
+            
+            int secNum=mainNum;
+            
+            
+            while (secNum!=0)
+            {
+                secNum/=10;
+                digit++;
+            }
+            
+            
+            secNum=mainNum;
+            
+            
+            
+            while (secNum!=0)
+            {
+                int secDigit=secNum%10;
+                
+                
+                int power=1;
+                for (int i=0; i<digit; i++)
+                {
+                    power*=secDigit;
+                }
+                
+                sum+=power;
+                secNum/=10;
+            }
+            
+            
+            if (sum==mainNum)
+            {
+                System.out.println(mainNum);
+            }
+            
+        }
+    }
+}
