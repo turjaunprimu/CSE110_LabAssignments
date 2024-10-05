@@ -1,0 +1,433 @@
+LabAssignment06_String
+Name : Turjaun Jannat Primu
+Student ID : 24301064
+Course : CSE110
+
+
+
+
+
+
+
+
+//Task_01
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+  
+    System.out.println("Enter a String: ");
+    String s=sc.nextLine();
+    
+    
+    for (int i=0; i<s.length(); i++)
+    {
+      int ascii=(int)s.charAt(i);
+      
+      if (ascii>=97 && ascii<=122)
+      {
+        int capAscii=((int)s.charAt(i))-32;
+        
+        System.out.print((char)capAscii);
+      }
+      
+      else if (ascii==32 || !(ascii>=97) || !(ascii<=122))
+      {
+        System.out.print((char)ascii);
+      }
+    }
+  }
+}
+
+
+
+
+
+//Task_02
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+  
+    System.out.println("Enter a String: ");
+    String s=sc.nextLine().toLowerCase();
+    String blank="";
+    
+    
+    for (int i=s.length()-1; i>=0; i--)
+    {
+      char palindrome=s.charAt(i);
+      blank+=palindrome;
+    }
+   
+    if (s.equals(blank))
+    {
+      System.out.println("true");
+    }
+    
+    else
+    {
+      System.out.println("false");
+    }
+      
+  }
+}
+
+
+
+
+//Task_03
+
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter String: ");
+    String s1=sc.nextLine();
+    System.out.println("Enter the character: ");
+    String s2=sc.nextLine();
+    String [] sSplit=s1.split(s2);
+
+   
+    for (int i=0; i<sSplit.length; i++)
+    {
+      System.out.println(sSplit[i]);
+    }
+  }
+}
+
+
+
+
+
+//Task_04
+
+
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+  
+    System.out.println("Enter a String: ");
+    String s=sc.nextLine();
+    
+    
+    for (int i=s.length()-1; i>=0; i--)
+    {
+     
+      System.out.print(s.charAt(i));
+    }
+  }
+}
+
+
+
+
+//Task_05
+
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+        Scanner sc=new Scanner(System.in);
+
+       
+        System.out.println("Enter a phrase: ");
+        String s=sc.nextLine().toLowerCase();
+        
+        
+        String blank="";
+        int countVowel=0;
+        int countConsonant=0;
+        
+        
+        for (int i=0; i<s.length(); i++)
+        {
+          
+          char ch=s.charAt(i);
+          
+          if (Character.isLetter(ch))
+          {
+            
+            if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            {
+              countVowel++;
+            }
+            
+            else
+            {
+              countConsonant++;
+            }
+          }
+        }
+        
+        if (countVowel%3==0 && countConsonant%5==0)
+        {
+          System.out.println("Aaarr! Me Plunder!!");
+        }
+        
+        else
+        {
+          System.out.println("Blimey! No Plunder!!");
+        }
+  }
+}
+
+
+
+
+//Task_06
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter String: ");
+    String s=sc.nextLine();
+    
+    
+    String [] sSplit=s.split(" ");
+
+   
+    for (int i=sSplit.length-1; i>=0; i--)
+    {
+     
+      if (i>0)
+      {
+        System.out.print(sSplit[i] + " ");
+      }
+      
+      else
+      {
+        System.out.print(sSplit[i]);
+      }
+      
+    }
+  }
+}
+
+
+
+
+
+//Task_07
+
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+        Scanner sc=new Scanner(System.in);
+
+       
+        System.out.println("First input: ");
+        String s1=sc.nextLine().toLowerCase();
+        System.out.println("Second input: ");
+        String s2=sc.nextLine().toLowerCase();
+        
+        String blank="";
+
+       
+        for (int i=0; i<s1.length(); i++)
+        {
+            char ch1=s1.charAt(i);
+            boolean flag=false;
+
+           
+            for (int j=0; j<s2.length(); j++)
+            {
+                if (ch1==s2.charAt(j))
+                {
+                    flag=true;
+                    break;
+                }
+            }
+
+          
+            if (!flag)
+            {
+                blank+=ch1;
+            }
+        }
+
+        
+        for (int i=0; i<s2.length(); i++)
+        {
+            char ch2=s2.charAt(i);
+            boolean flag=false;
+
+           
+            for (int j=0; j<s1.length(); j++)
+            {
+                if (ch2==s1.charAt(j))
+                {
+                    flag=true;
+                    break;
+                }
+            }
+
+           
+            if (!flag)
+
+            {
+                blank+=ch2;
+            }
+        }
+
+        
+        System.out.println(blank.toUpperCase());
+
+      
+    }
+}
+  
+
+
+
+//Task_08
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+        Scanner sc=new Scanner(System.in);
+
+       
+        System.out.println("Enter a String: ");
+        String s=sc.nextLine().toLowerCase();
+        
+        boolean flag=true;
+        String blank="";
+
+       
+        for (int i=0; i<s.length(); i++)
+        {
+            char ch=s.charAt(i);
+            
+            if (Character.isLetter(ch))
+            {
+              
+              if (flag)
+              {
+                blank+=Character.toLowerCase(ch);
+              }
+              
+              else
+              {
+                blank+=Character.toUpperCase(ch);
+              }
+              
+              flag=!flag;
+            }
+            
+            
+            else
+            {
+              blank+=ch;
+            }
+        }
+        
+        System.out.println(blank);
+
+      
+    }
+}
+
+
+
+//Task_09
+
+
+
+import java.util.Scanner;
+public class LabAssignment06
+{
+  public static void main(String[]args)
+  {
+        Scanner sc=new Scanner(System.in);
+
+       
+        System.out.println("Enter a Password: ");
+        String s=sc.nextLine();
+        
+        boolean lengthFlag=false;
+        boolean upperCaseFlag=false;
+        boolean lowerCaseFlag=false;
+        boolean digitFlag=false;
+        boolean specialCharFlag=false;
+        
+        String blank="";
+        
+        
+        
+        if (s.length()>8)
+        {
+          lengthFlag=true;
+        }
+        
+
+       
+        for (int i=0; i<s.length(); i++)
+        {
+          
+          char ch=s.charAt(i);
+          
+          if (Character.isUpperCase(ch))
+          {
+            upperCaseFlag=true;
+          }
+          
+          else if (Character.isLowerCase(ch))
+          {
+            lowerCaseFlag=true;
+          }
+          
+          else if (Character.isDigit(ch))
+          {
+            digitFlag=true;
+          }
+          
+          else
+          {
+            specialCharFlag=true;
+          }
+        }
+        
+        if (lengthFlag && upperCaseFlag && lowerCaseFlag && digitFlag && specialCharFlag)
+        {
+          System.out.println("True");
+        }
+        else
+        {
+          System.out.println("False");
+        }
+  }
+}
